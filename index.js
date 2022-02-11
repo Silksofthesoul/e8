@@ -60,11 +60,13 @@
 
   die(_ => {
 
-    const imgs = ['2.gif', '4.gif'];
 
     const body = document.body;
 
     const html = body.parentNode;
+
+    const path = body.dataset.path || '';
+    const imgs = [`${path}/2.gif`, `${path}/4.gif`];
 
     const text = `
       * {
